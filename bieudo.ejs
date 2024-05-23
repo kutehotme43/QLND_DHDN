@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <%- include('global_head.ejs') %>
+    <title>Biểu đồ</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <%- include('navigation_left.ejs', {cl_navigation_left_bieudo: 'active' }) %>
+        <div id="page-wrapper" class="gray-bg">
+            <%- include('header.ejs') %>
+            <div class="wrapper wrapper-content animated fadeInRight">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <h5>Line Chart Example
+                                    <small>With custom colors.</small>
+                                </h5>
+                            </div>
+                            <div class="ibox-content">
+                                <div>
+                                    <canvas id="lineChart" height="140"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <h5>Bar Chart Example</h5>
+                            </div>
+                            <div class="ibox-content">
+                                <div>
+                                    <canvas id="barChart" height="140"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <h5>Polar Area</h5>
+
+                            </div>
+                            <div class="ibox-content">
+                                <div class="text-center">
+                                    <canvas id="polarChart" height="140"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <h5>Pie </h5>
+
+                            </div>
+                            <div class="ibox-content">
+                                <div>
+                                    <canvas id="doughnutChart" height="140"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <h5>Radar Chart Example</h5>
+                            </div>
+                            <div class="ibox-content">
+                                <div>
+                                    <canvas id="radarChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="pull-right">10GB of <strong>250GB</strong> Free.</div>
+                <div><strong>Copyright</strong> Company &copy; 2024-2025</div>
+            </div>
+        </div>
+    </div>
+    <%- include('global_script.ejs') %>
+    <div id="snackbar"></div>
+    <div id="snackbar-xanh"></div>
+    <div id="snackbar-do"></div>
+
+</body>
+
+</html>
+
+<script src="view-script/GlobalVariable.js"></script>
+<script src="view-script/GlobalFunction.js"></script>
+<script src="view-script/bieudo.js"></script>
